@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EscapeGame.Plugins", "EscapeGame.Plugins.csproj", "{826075B5-03AE-4AFD-BFDC-6B770C4E5155}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EscapeGame", "EscapeGame.csproj", "{A2F515E9-E85B-3317-D5D1-BFF3F33557F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EscapeGame.Editor", "EscapeGame.Editor.csproj", "{4D9BA79E-64EF-71DD-1B7A-8D986E9EDED0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{826075B5-03AE-4AFD-BFDC-6B770C4E5155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{826075B5-03AE-4AFD-BFDC-6B770C4E5155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{826075B5-03AE-4AFD-BFDC-6B770C4E5155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{826075B5-03AE-4AFD-BFDC-6B770C4E5155}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2F515E9-E85B-3317-D5D1-BFF3F33557F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2F515E9-E85B-3317-D5D1-BFF3F33557F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2F515E9-E85B-3317-D5D1-BFF3F33557F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2F515E9-E85B-3317-D5D1-BFF3F33557F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D9BA79E-64EF-71DD-1B7A-8D986E9EDED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D9BA79E-64EF-71DD-1B7A-8D986E9EDED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D9BA79E-64EF-71DD-1B7A-8D986E9EDED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D9BA79E-64EF-71DD-1B7A-8D986E9EDED0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
