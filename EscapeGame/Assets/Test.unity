@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 24889912}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -261,6 +261,17 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 100048, guid: 3cf2712fce0d9a44fb3724df3affac07, type: 3}
   m_PrefabInternal: {fileID: 921056775}
+--- !u!114 &313684283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 313684282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c1772504000e784db26a355c25e21e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &313684284
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -299,9 +310,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49c4086017c51f7498c40c855a1f2855, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 0.4
+  movementSpeed: 15
   cameraSpeed: 1
   jumpPower: 10
+  dashPower: 30
 --- !u!114 &313684287
 MonoBehaviour:
   m_ObjectHideFlags: 0
