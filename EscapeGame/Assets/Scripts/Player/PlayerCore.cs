@@ -6,7 +6,7 @@ using UniRx;
 
 public class PlayerCore : MonoBehaviour, IDamageable
 {
-    public IReadOnlyReactiveProperty<bool> IsDead => IsDead;
+    public IReadOnlyReactiveProperty<bool> IsDead => isDead;
     BoolReactiveProperty isDead = new BoolReactiveProperty(false);
 
     public void TakeDamage(int damage)
