@@ -313,7 +313,7 @@ MonoBehaviour:
   movementSpeed: 15
   cameraSpeed: 1
   jumpPower: 10
-  dashPower: 30
+  dashPower: 200
 --- !u!114 &313684287
 MonoBehaviour:
   m_ObjectHideFlags: 0
