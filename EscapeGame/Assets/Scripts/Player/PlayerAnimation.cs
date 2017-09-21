@@ -33,7 +33,7 @@ public class PlayerAnimation : MonoBehaviour {
                 animator.SetTrigger("rollRight");
         });
 
-        playerMove.MoveDirection.Subscribe(direction =>
+        playerMove.MoveDirection.Where(_=> !playerMove.IsJumping.Value).Subscribe(direction =>
         {
             if (direction == Vector3.zero)
                 animator.SetTrigger("idle");

@@ -12,11 +12,13 @@ public class PlayerInput : MonoBehaviour, IAdvancedInputProvider
     public IReadOnlyReactiveProperty<bool> IsAttackButton => isAttackButton;
     public IReadOnlyReactiveProperty<Vector3> CharacterMoveDirection => characterMoveDirection;
     public IReadOnlyReactiveProperty<Vector3> CameraMoveDirection => cameraMoveDirection;
+    public IReadOnlyReactiveProperty<bool> IsDefenceButton => IsDefenceButton;
 
     Vector3ReactiveProperty characterMoveDirection = new Vector3ReactiveProperty();
     Vector3ReactiveProperty cameraMoveDirection = new Vector3ReactiveProperty();
     ReactiveProperty<bool> isJumpButton;
     ReactiveProperty<bool> isAttackButton;
+    ReactiveProperty<bool> isDefenceButton;
 
     private void Start()
     {
@@ -33,6 +35,9 @@ public class PlayerInput : MonoBehaviour, IAdvancedInputProvider
 
         // アタックボタン
         isAttackButton = this.UpdateAsObservable().Select(_ => Input.GetMouseButtonDown(0)).ToReactiveProperty();
+
+        // ディフェンスボタン
+        isDefenceButton = this.UpdateAsObservable().Select(_ => Input.GetMouseButton(1)).ToReactiveProperty();
 
         // ダッシュボタン
         // ダブルタップと感知する時間

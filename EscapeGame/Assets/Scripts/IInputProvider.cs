@@ -12,4 +12,5 @@ public interface IInputProvider
 public interface IAdvancedInputProvider : IInputProvider
 {
     Subject<Vector3> DashDirection { get; }
+    IReadOnlyReactiveProperty<bool> IsDefenceButton { get; }
 }
