@@ -173,14 +173,8 @@
     <Compile Include="Assets\PhotonChatApi\ChatState.cs" />
     <Compile Include="Assets\PhotonChatApi\ChatUserStatus.cs" />
     <Compile Include="Assets\PhotonChatApi\IChatClientListener.cs" />
-    <Compile Include="Assets\Scripts\DeathTouch.cs" />
     <Compile Include="Assets\Scripts\IDamageable.cs" />
     <Compile Include="Assets\Scripts\IInputProvider.cs" />
-    <Compile Include="Assets\Scripts\Player\DashInputProvider.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerAnimation.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerCore.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerInputProvider.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerMove.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Photon Unity Networking\link.xml" />
