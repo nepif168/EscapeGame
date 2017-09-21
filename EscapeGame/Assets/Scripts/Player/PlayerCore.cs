@@ -1,16 +1,17 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using UniRx;
 using UnityEngine;
 
-public class PlayerCore : MonoBehaviour {
+public class PlayerCore : MonoBehaviour, IDamageable
+{
+    public IReadOnlyReactiveProperty<bool> IsDead => isDead;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    BoolReactiveProperty isDead = new BoolReactiveProperty(false);
+
+    public void TakeDamage(int damage)
+    {
+        isDead.Value = true;
+    }
 }

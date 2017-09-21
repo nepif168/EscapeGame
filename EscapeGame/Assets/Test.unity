@@ -269,7 +269,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 313684282}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c1772504000e784db26a355c25e21e3, type: 3}
+  m_Script: {fileID: 11500000, guid: e944c5a5f322a91438165fd7a96e0440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!65 &313684284
@@ -307,13 +307,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 313684282}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49c4086017c51f7498c40c855a1f2855, type: 3}
+  m_Script: {fileID: 11500000, guid: fea86de68d1436d4a8ccc02e90efeb65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 15
-  cameraSpeed: 1
-  jumpPower: 10
-  dashPower: 200
 --- !u!114 &313684287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,20 +318,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 313684282}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 555ab588171a18a43bc58ea6344d7794, type: 3}
+  m_Script: {fileID: 11500000, guid: 71413e10ec94507438decb79800efa4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &313684288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 313684282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d4041fb813be1b46a39956aac317e0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  movementSpeed: 20
+  jumpPower: 20
+  dashSpeed: 150
+  JumpCooldown: 1
+  DashCooldown: 1
 --- !u!114 &313684289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,7 +334,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 313684282}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53c8ecd5c0b43914b93868699e9df3aa, type: 3}
+  m_Script: {fileID: 11500000, guid: c698ad006f3d91f47ab8779774e7a25a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &327833079
@@ -1089,7 +1079,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100048, guid: 3cf2712fce0d9a44fb3724df3affac07, type: 3}
       propertyPath: m_TagString
-      value: Ground
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3cf2712fce0d9a44fb3724df3affac07, type: 3}
@@ -1128,7 +1118,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7456226f6bf127546889902272512679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
 --- !u!23 &1413615102
 MeshRenderer:
   m_ObjectHideFlags: 0
